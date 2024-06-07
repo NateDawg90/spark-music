@@ -9,8 +9,6 @@ import { selectIsCartOpen } from '../../store/cart/cart.selector';
 import { selectCurrentUser } from '../../store/user/user.selector';
 import { signOutStart } from '../../store/user/user.action';
 
-import { ReactComponent as CrwnLogo } from '../../assets/crown.svg';
-
 import {
   NavigationContainer,
   NavLinks,
@@ -29,7 +27,6 @@ const Navigation = () => {
     <Fragment>
       <NavigationContainer>
         <LogoContainer to="/">
-          {/* <CrwnLogo className='logo' /> */}
           <img className="logo" src="/logo512.png" alt="logo" />
         </LogoContainer>
         <NavLinks>

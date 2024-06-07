@@ -10,14 +10,20 @@ export const NavigationContainer = styled.div`
 `;
 
 export const LogoContainer = styled(Link)`
-  /* height: 100%;
-  width: 70px;
-  padding: 25px; */
   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px; // Fixed height
+  overflow: hidden; // Ensures the image doesn't overflow the container
+
+  img {
+    width: auto;
+    height: 100%; // Adjusts the height to fill the container while maintaining aspect ratio
+  }
 `;
 
 export const NavLinks = styled.div`
-  width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
