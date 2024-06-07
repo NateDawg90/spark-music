@@ -35,10 +35,9 @@ const Category = () => {
         <Spinner />
       ) : (
         <CategoryContainer>
-          {products &&
-            products.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
+          {products?.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
         </CategoryContainer>
       )}
     </Fragment>

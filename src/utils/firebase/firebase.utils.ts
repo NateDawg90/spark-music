@@ -26,14 +26,14 @@ import {
 import { Category } from '../../store/categories/category.types';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyDDU4V-_QV3M8GyhC9SVieRTDM4dbiT0Yk',
-  authDomain: 'crwn-clothing-db-98d4d.firebaseapp.com',
-  projectId: 'crwn-clothing-db-98d4d',
-  storageBucket: 'crwn-clothing-db-98d4d.appspot.com',
-  messagingSenderId: '626766232035',
-  appId: '1:626766232035:web:506621582dab103a4d08d6',
+  apiKey: 'AIzaSyAR3ehuvR8JyZmShKWRd7hk6tsDubGZN6w',
+  authDomain: 'crwn-db-b2962.firebaseapp.com',
+  projectId: 'crwn-db-b2962',
+  storageBucket: 'crwn-db-b2962.appspot.com',
+  messagingSenderId: '1005470319797',
+  appId: '1:1005470319797:web:ddf005de29664458b06afc',
+  measurementId: 'G-TLTEK2DH5F',
 };
-
 const firebaseApp = initializeApp(firebaseConfig);
 
 const googleProvider = new GoogleAuthProvider();
@@ -54,7 +54,9 @@ export type ObjectToAdd = {
   title: string;
 };
 
-export const addCollectionAndDocuments = async <T extends ObjectToAdd>(
+export const addCollectionAndDocuments = async <
+  T extends ObjectToAdd
+>(
   collectionKey: string,
   objectsToAdd: T[]
 ): Promise<void> => {
@@ -70,7 +72,9 @@ export const addCollectionAndDocuments = async <T extends ObjectToAdd>(
   console.log('done');
 };
 
-export const getCategoriesAndDocuments = async (): Promise<Category[]> => {
+export const getCategoriesAndDocuments = async (): Promise<
+  Category[]
+> => {
   const collectionRef = collection(db, 'categories');
   const q = query(collectionRef);
 
@@ -139,8 +143,9 @@ export const signInAuthUserWithEmailAndPassword = async (
 
 export const signOutUser = async () => await signOut(auth);
 
-export const onAuthStateChangedListener = (callback: NextOrObserver<User>) =>
-  onAuthStateChanged(auth, callback);
+export const onAuthStateChangedListener = (
+  callback: NextOrObserver<User>
+) => onAuthStateChanged(auth, callback);
 
 export const getCurrentUser = (): Promise<User | null> => {
   return new Promise((resolve, reject) => {
