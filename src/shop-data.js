@@ -1,236 +1,285 @@
 const SHOP_DATA = [
   {
-    title: 'Hats',
+    title: 'Instruments',
     items: [
       {
         id: 1,
-        name: 'Brown Brim',
-        imageUrl: 'https://i.ibb.co/ZYW3VTp/brown-brim.png',
-        price: 25,
+        name: 'Fender Telecaster',
+        imageUrl:
+          'https://m.media-amazon.com/images/I/51mudbLrUDL.jpg',
+        price: 250,
       },
       {
         id: 2,
-        name: 'Blue Beanie',
-        imageUrl: 'https://i.ibb.co/ypkgK0X/blue-beanie.png',
-        price: 18,
+        name: 'Fender Stratocaster',
+        imageUrl:
+          'https://m.media-amazon.com/images/I/61Z01+68f8L._AC_UF894,1000_QL80_.jpg',
+        price: 200,
       },
       {
         id: 3,
-        name: 'Brown Cowboy',
-        imageUrl: 'https://i.ibb.co/QdJwgmp/brown-cowboy.png',
-        price: 35,
+        name: 'Gibson Les Paul',
+        imageUrl:
+          'https://images.ctfassets.net/m8onsx4mm13s/1bGDpe1xTLFTkMnvKr94Lg/c7d8fb811cf744bac700d26c99620ef4/LPS6F002HNH1_front__1_.png',
+        price: 2450,
       },
       {
         id: 4,
-        name: 'Grey Brim',
-        imageUrl: 'https://i.ibb.co/RjBLWxB/grey-brim.png',
-        price: 25,
+        name: 'Gibson SG',
+        imageUrl:
+          'https://images.ctfassets.net/m8onsx4mm13s/4LyiTfG6XxpWNglohmhYCL/2e9da40d667578deada305052c089057/__static.gibson.com_product-images_USA_USA8LG109_Heritage_Cherry_SGS19HCCH1_1.jpg',
+        price: 1090,
       },
       {
         id: 5,
-        name: 'Green Beanie',
-        imageUrl: 'https://i.ibb.co/YTjW3vF/green-beanie.png',
-        price: 18,
+        name: 'Gibson Flying V',
+        imageUrl:
+          'https://images.ctfassets.net/m8onsx4mm13s/3B0nSCXpXP364ZgIkCqaCt/4bce01548378bf44abc75648d23b7d94/DSVX00ANCH1_front.png',
+        price: 1999,
       },
       {
         id: 6,
-        name: 'Palm Tree Cap',
-        imageUrl: 'https://i.ibb.co/rKBDvJX/palm-tree-cap.png',
-        price: 14,
+        name: 'Gibson Explorer',
+        imageUrl:
+          'https://images.ctfassets.net/m8onsx4mm13s/7EBhIKx0SiHp5YeFO8JtrQ/25cd6365dd0dfb8376bde64ca0fe990d/__static.gibson.com_product-images_Custom_CUST9M301_Ebony_DSMXEBGH1E_Front1.jpg?w=1200&h=1200',
+        price: 600,
       },
       {
         id: 7,
-        name: 'Red Beanie',
-        imageUrl: 'https://i.ibb.co/bLB646Z/red-beanie.png',
-        price: 18,
+        name: 'Gibson Firebird',
+        imageUrl:
+          'https://images.ctfassets.net/m8onsx4mm13s/3euqe5qpih5Vk8IuXmjcvL/ea32986abe85117bb5fada9fb7fa91a0/__static.gibson.com_product-images_Custom_CUS9IM98_Cardinal_Red_FB5LACRNM1_front.jpg',
+        price: 1000,
       },
       {
         id: 8,
-        name: 'Wolf Cap',
-        imageUrl: 'https://i.ibb.co/1f2nWMM/wolf-cap.png',
-        price: 14,
+        name: 'Gibson ES-335',
+        imageUrl:
+          'https://images.ctfassets.net/m8onsx4mm13s/5e9UTJlthWf6WzCcExQleX/4b103e8e30748b0e7576d3c5b06abef8/__static.gibson.com_product-images_USA_USAVLJ627_Sixties_Cherry_ES3500SCNH1_front.jpg',
+        price: 500,
       },
       {
         id: 9,
-        name: 'Blue Snapback',
-        imageUrl: 'https://i.ibb.co/X2VJP2W/blue-snapback.png',
-        price: 16,
+        name: 'Gibson Hummingbird',
+        imageUrl:
+          'https://images.ctfassets.net/m8onsx4mm13s/3qPKhdEz5JuCtxXfsj41HT/c03e4bd5e011b292ec018413107e34ff/__static.gibson.com_product-images_Acoustic_ACCFR6729_Heritage_Cherry_Sunburst_OCSSHBHCS_front.jpg',
+        price: 1000,
       },
     ],
   },
   {
-    title: 'Sneakers',
+    title: 'Books',
     items: [
       {
         id: 10,
-        name: 'Adidas NMD',
-        imageUrl: 'https://i.ibb.co/0s3pdnc/adidas-nmd.png',
-        price: 220,
+        name: 'Music Theory: From Beginner to Expert',
+        imageUrl:
+          'https://m.media-amazon.com/images/I/51y2bj5OYvL.jpg',
+        price: 20,
       },
       {
         id: 11,
-        name: 'Adidas Yeezy',
-        imageUrl: 'https://i.ibb.co/dJbG1cT/yeezy.png',
-        price: 280,
+        name: 'The Beatles: The Biography',
+        imageUrl:
+          'https://m.media-amazon.com/images/I/61oXW5sglCL._AC_UF1000,1000_QL80_.jpg',
+        price: 22,
       },
       {
         id: 12,
-        name: 'Black Converse',
-        imageUrl: 'https://i.ibb.co/bPmVXyP/black-converse.png',
-        price: 110,
+        name: 'Jimi Hendrix: The Biography',
+        imageUrl:
+          'https://m.media-amazon.com/images/I/81lsjXs3IgL._AC_UF1000,1000_QL80_.jpg',
+        price: 20,
       },
       {
         id: 13,
-        name: 'Nike White AirForce',
-        imageUrl: 'https://i.ibb.co/1RcFPk0/white-nike-high-tops.png',
-        price: 160,
+        name: 'Led Zeppelin: The Biography',
+        imageUrl:
+          'https://m.media-amazon.com/images/I/81FnDCV-cKL._AC_UF1000,1000_QL80_.jpg',
+        price: 20,
       },
       {
         id: 14,
-        name: 'Nike Red High Tops',
-        imageUrl: 'https://i.ibb.co/QcvzydB/nikes-red.png',
-        price: 160,
+        name: 'The Rolling Stones: The Biography',
+        imageUrl:
+          'https://m.media-amazon.com/images/I/61euTKKCVtL._AC_UF1000,1000_QL80_.jpg',
+        price: 20,
       },
       {
         id: 15,
-        name: 'Nike Brown High Tops',
-        imageUrl: 'https://i.ibb.co/fMTV342/nike-brown.png',
-        price: 160,
+        name: 'Queen: The Biography',
+        imageUrl:
+          'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1653179322l/59486199.jpg',
+        price: 20,
       },
       {
         id: 16,
-        name: 'Air Jordan Limited',
-        imageUrl: 'https://i.ibb.co/w4k6Ws9/nike-funky.png',
-        price: 190,
+        name: 'The Who: The Biography',
+        imageUrl:
+          'https://thewho.info/images/81-Illustrated_Biography-Book-The_Who.jpg',
+        price: 20,
       },
       {
         id: 17,
-        name: 'Timberlands',
-        imageUrl: 'https://i.ibb.co/Mhh6wBg/timberlands.png',
-        price: 200,
+        name: 'Pink Floyd: The Biography',
+        imageUrl:
+          'https://m.media-amazon.com/images/I/81J4AeTMSiL._AC_UF1000,1000_QL80_.jpg',
+        price: 20,
       },
     ],
   },
   {
-    title: 'Jackets',
+    title: 'Accessories',
     items: [
       {
         id: 18,
-        name: 'Black Jean Shearling',
-        imageUrl: 'https://i.ibb.co/XzcwL5s/black-shearling.png',
-        price: 125,
+        name: 'Guitar Strap',
+        imageUrl:
+          'https://m.media-amazon.com/images/I/911Q5PjjpUL.jpg',
+        price: 25,
       },
       {
         id: 19,
-        name: 'Blue Jean Jacket',
-        imageUrl: 'https://i.ibb.co/mJS6vz0/blue-jean-jacket.png',
-        price: 90,
+        name: 'Guitar Stand',
+        imageUrl:
+          'https://m.media-amazon.com/images/I/611XCHYLNUL.jpg',
+        price: 20,
       },
       {
         id: 20,
-        name: 'Grey Jean Jacket',
-        imageUrl: 'https://i.ibb.co/N71k1ML/grey-jean-jacket.png',
-        price: 90,
+        name: 'Guitar Case',
+        imageUrl:
+          'https://cdn.connectsites.net/user_files/tkl/product_images/000/029/756/original.png?1607709460',
+        price: 50,
       },
       {
         id: 21,
-        name: 'Brown Shearling',
-        imageUrl: 'https://i.ibb.co/s96FpdP/brown-shearling.png',
-        price: 165,
+        name: 'Guitar Tuner',
+        imageUrl:
+          'https://m.media-amazon.com/images/I/41duhgZ9KgL._AC_.jpg',
+        price: 10,
       },
       {
         id: 22,
-        name: 'Tan Trench',
-        imageUrl: 'https://i.ibb.co/M6hHc3F/brown-trench.png',
-        price: 185,
+        name: 'Guitar Strings',
+        imageUrl:
+          'https://s3.us-west-2.amazonaws.com/static.ernieball.com/website/images/products/image_front/full/P02621.png',
+        price: 10,
       },
     ],
   },
   {
-    title: 'Womens',
+    title: 'Audio Equipment',
     items: [
       {
         id: 23,
-        name: 'Blue Tanktop',
-        imageUrl: 'https://i.ibb.co/7CQVJNm/blue-tank.png',
-        price: 25,
+        name: 'Fender Amp',
+        imageUrl:
+          'https://m.media-amazon.com/images/I/51mudbLrUDL.jpg',
+        price: 250,
       },
       {
         id: 24,
-        name: 'Floral Blouse',
-        imageUrl: 'https://i.ibb.co/4W2DGKm/floral-blouse.png',
-        price: 20,
+        name: 'Marshall Amp',
+        imageUrl:
+          'https://www.replayguitar.com/cdn/shop/products/Marshall-MG30GFX-Combo-Guitar-Amplifier-With-Effects-30W-10293-hero.jpg?v=1571439186',
+        price: 200,
       },
       {
         id: 25,
-        name: 'Floral Dress',
-        imageUrl: 'https://i.ibb.co/KV18Ysr/floral-skirt.png',
-        price: 80,
+        name: 'Vox Amp',
+        imageUrl:
+          'https://www.altomusic.com/cdn/shop/files/1_1__3.jpg?v=1692041766',
+        price: 450,
       },
       {
         id: 26,
-        name: 'Red Dots Dress',
-        imageUrl: 'https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png',
-        price: 80,
+        name: 'Orange Amp',
+        imageUrl:
+          'https://m.media-amazon.com/images/I/716tPn1DU8L.jpg',
+        price: 450,
       },
       {
         id: 27,
-        name: 'Striped Sweater',
-        imageUrl: 'https://i.ibb.co/KmSkMbH/striped-sweater.png',
-        price: 45,
+        name: 'Blackstar Amp',
+        imageUrl:
+          'https://m.media-amazon.com/images/I/61WE2jPxtEL._AC_UF894,1000_QL80_.jpg',
+        price: 550,
       },
       {
         id: 28,
-        name: 'Yellow Track Suit',
-        imageUrl: 'https://i.ibb.co/v1cvwNf/yellow-track-suit.png',
-        price: 135,
+        name: 'Line 6 Amp',
+        imageUrl:
+          'https://www.delucamusic.com/wp-content/uploads/2014/04/Line-6-Spider-IV-30-30-watt-Guitar-Amp.jpg',
+        price: 600,
       },
       {
         id: 29,
-        name: 'White Blouse',
-        imageUrl: 'https://i.ibb.co/qBcrsJg/white-vest.png',
-        price: 20,
+        name: 'Instrument Cable',
+        imageUrl:
+          'https://hosatech.com/wp-content/uploads/2020/10/GTR-200-Full_RGB_1800.jpg',
+        price: 10,
       },
     ],
   },
   {
-    title: 'Mens',
+    title: 'Clothing',
     items: [
       {
         id: 30,
-        name: 'Camo Down Vest',
-        imageUrl: 'https://i.ibb.co/xJS0T3Y/camo-vest.png',
-        price: 325,
+        name: 'Guitar T-Shirt',
+        imageUrl:
+          'https://m.media-amazon.com/images/I/51I5s3Z5I8L._AC_UY1000_.jpg',
+        price: 25,
       },
       {
         id: 31,
-        name: 'Floral T-shirt',
-        imageUrl: 'https://i.ibb.co/qMQ75QZ/floral-shirt.png',
-        price: 20,
+        name: 'Guitar Hoodie',
+        imageUrl:
+          'https://i.etsystatic.com/5830090/r/il/57c411/2187031810/il_fullxfull.2187031810_mwl5.jpg',
+        price: 35,
       },
       {
         id: 32,
-        name: 'Black & White Longsleeve',
-        imageUrl: 'https://i.ibb.co/55z32tw/long-sleeve.png',
-        price: 25,
+        name: 'Guitar Hat',
+        imageUrl:
+          'https://i.etsystatic.com/23133513/r/il/94f3cb/4006781207/il_fullxfull.4006781207_1nnw.jpg',
+        price: 15,
       },
       {
         id: 33,
-        name: 'Pink T-shirt',
-        imageUrl: 'https://i.ibb.co/RvwnBL8/pink-shirt.png',
-        price: 25,
+        name: 'Guitar Socks',
+        imageUrl:
+          'https://m.media-amazon.com/images/I/61VMaWy6eaL._AC_UY1000_.jpg',
+        price: 5,
       },
       {
         id: 34,
-        name: 'Jean Long Sleeve',
-        imageUrl: 'https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png',
-        price: 40,
+        name: 'Beatles Shirt',
+        imageUrl:
+          'https://usastore.thebeatles.com/cdn/shop/products/BTLLOGOTEE.png?v=1663695893',
+        price: 20,
       },
       {
         id: 35,
-        name: 'Burgundy T-shirt',
-        imageUrl: 'https://i.ibb.co/mh3VM1f/polka-dot-shirt.png',
-        price: 25,
+        name: 'Queen Shirt',
+        imageUrl:
+          'https://m.media-amazon.com/images/I/A13usaonutL._CLa%7C2140%2C2000%7CA1oDU6d4LbL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UY1000_.png',
+        price: 15,
+      },
+      {
+        id: 36,
+        name: 'Metallica Shirt',
+        imageUrl:
+          'https://target.scene7.com/is/image/Target/GUEST_2b8f2c52-72f7-409b-bd72-1160d9c6d0c7?wid=488&hei=488&fmt=pjpeg',
+        price: 10,
+      },
+      {
+        id: 37,
+        name: 'Rush Shirt',
+        imageUrl:
+          'https://m.media-amazon.com/images/I/51o0wA1wPdL._AC_UY1000_.jpg',
+        price: 10,
       },
     ],
   },

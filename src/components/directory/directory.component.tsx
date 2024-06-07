@@ -14,33 +14,33 @@ export type DirectoryCategory = {
 const categories: DirectoryCategory[] = [
   {
     id: 1,
-    title: 'hats',
-    imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
-    route: 'shop/hats',
+    title: 'instruments',
+    imageUrl: '/img/instruments.jpeg',
+    route: 'shop/instruments',
   },
   {
     id: 2,
-    title: 'jackets',
-    imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
-    route: 'shop/jackets',
+    title: 'books',
+    imageUrl: '/img/books.jpeg',
+    route: 'shop/books',
   },
   {
     id: 3,
-    title: 'sneakers',
-    imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
-    route: 'shop/sneakers',
+    title: 'accessories',
+    imageUrl: '/img/accessories.jpeg',
+    route: 'shop/accessories',
   },
   {
     id: 4,
-    title: 'womens',
-    imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
-    route: 'shop/womens',
+    title: 'Audio Equipment',
+    imageUrl: '/img/equipment.jpeg',
+    route: 'shop/audio%20equipment',
   },
   {
     id: 5,
-    title: 'mens',
-    imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
-    route: 'shop/mens',
+    title: 'clothing',
+    imageUrl: '/img/clothing.jpeg',
+    route: 'shop/clothing',
   },
 ];
 
